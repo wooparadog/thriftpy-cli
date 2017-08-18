@@ -13,7 +13,7 @@ entry_points = {
 
 setup(
     name="thriftpy-cli",
-    version=0.1,
+    version=0.2,
     description="Commandline tools for thrift",
     long_description=open("README.rst").read(),
     author="Haochuan Guo",
