@@ -13,6 +13,6 @@ Usage
 
 .. code:: bash
 
-    $ thriftpy-cli -f thrift_file.thrift -h localhost -p 8010 -s ServiceName
+    $ thriftpy-cli -t thrift_file.thrift -h localhost -p 8010 -s ServiceName
     $ # Launching into ipython
     >>> client.api(*args)
