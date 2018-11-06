@@ -1,8 +1,14 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import sys
 from setuptools import setup, find_packages
 
+
+if sys.version.startswith('2'):
+    ipython = 'ipython==5.8.0'
+else:
+    ipython = 'ipython'
 
 entry_points = {
     'console_scripts': [
@@ -10,10 +16,9 @@ entry_points = {
     ],
 }
 
-
 setup(
     name="thriftpy-cli",
-    version=0.2,
+    version=0.3,
     description="Commandline tools for thrift",
     long_description=open("README.rst").read(),
     author="Haochuan Guo",
@@ -24,6 +29,6 @@ setup(
     install_requires=[
         'click',
         'thriftpy',
-        'ipython'
+        ipython
     ],
 )
